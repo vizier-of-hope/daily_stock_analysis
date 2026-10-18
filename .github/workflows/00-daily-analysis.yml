@@ -1,10 +1,11 @@
 name: 每日股票分析
 
 on:
-  # Daily before US open: UTC 12:30 = 20:30 SGT = 08:30 EDT / 07:30 EST
-  schedule:
-    - cron: '30 12 * * 1-5'     # Mon-Fri, UTC 12:30
-  
+  # Schedule disabled: daily Telegram reports come from the TradingAgents fork.
+  # To re-enable, restore:
+  # schedule:
+  #   - cron: '30 12 * * 1-5'     # Mon-Fri, UTC 12:30 = 20:30 SGT
+
   # 手动触发
   workflow_dispatch:
     inputs:
